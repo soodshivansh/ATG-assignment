@@ -44,7 +44,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <p>Search for your favorite groups in ATG</p>
             </div>
-            <div class="create-acc">
+            <div class="create-acc" id="show-signup">
                 Create account.<span>It's free!</span><i class="fa-solid fa-sort-down"></i>
             </div>
     </nav>
@@ -178,6 +178,78 @@
         </div>
     
     </section>
+
+    <div id="overlay" class="overlay"></div>
+
+    
+    <div id="signup" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+        <div id="cross" style="position: absolute;top: -8%;right: 0%;background-color: aliceblue; border-radius: 20rem;padding: 5px 8px;"><i class="fa-solid fa-x"></i></div>
+        <div class="popup-signup">
+            <div class="topline">
+                <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+            </div>
+            <div class="create-acc">
+                <div class="wrapper-acc">
+                    <p class="pbold">Create Account</p>
+                    <p id="show-signin">Already have an account? <span style="color: #2F6CE5;">Sign In</span></p>
+                </div>
+            </div>
+            <div class="form">
+                <div class="boxes">
+                    <div><input class="input1" placeholder="First Name"><input class="input1" placeholder="Last Name"></div>
+                    <input class="input2" placeholder="Email">
+                    <input class="input2" placeholder="Password">
+                    <input class="input2" placeholder="Confirm Password">
+                    <div class="wrapper-login">
+                        <button class="button3">Create Account</button>
+                        <div style="display: flex;flex-direction: column;align-items: center;gap: 8px;">
+                            <button class="button4"><img src="./assets/f_logo_RGB-Blue_1024.png" />Sign up with Facebook</button>
+                            <button class="button4"><img src="./assets/Group 451.png" /> Sign up with Google</button>
+                        </div>
+                        </div>
+                </div>
+                <div class="image">
+                        <img src="./assets/Group 449.png" />
+                        <p style="font-size: xx-small;margin-top: 4rem;">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+    <div id="signin" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+        <div id="xcross" style="position: absolute;top: -8%;right: 0%;background-color: aliceblue; border-radius: 20rem;padding: 5px 8px;"><i class="fa-solid fa-x"></i></div>
+        <div class="popup-signup">
+            <div class="topline">
+                <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+            </div>
+            <div class="create-acc">
+                <div class="wrapper-acc">
+                    <p class="pbold">Sign In</p>
+                    <p id="show-signup">Don’t have an account yet? <span style="color: #2F6CE5;">Create new for free!</span></p>
+                </div>
+            </div>
+            <div class="form">
+                <div class="boxes">
+                    <input class="input2" placeholder="Email">
+                    <input class="input2" placeholder="Password">
+                    <div class="wrapper-login">
+                        <button class="button3">Sign In</button>
+                        <div style="display: flex;flex-direction: column;align-items: center;gap: 8px;">
+                            <button class="button4"><img src="./assets/f_logo_RGB-Blue_1024.png" />Sign in with Facebook</button>
+                            <button class="button4"><img src="./assets/Group 451.png" /> Sign in with Google</button>
+                            <p style="margin-top: 2rem;">Forgot Password?</p>
+                        </div>
+                        </div>
+                </div>
+                <div class="image">
+                        <img src="./assets/Group 449.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
     
 </body>
 </html>
